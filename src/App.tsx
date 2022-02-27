@@ -9,7 +9,6 @@ import { getAge } from "./utils";
 import {
   RiGithubFill,
   RiLinkedinFill,
-  RiLinkM,
   RiMailFill,
   RiPhoneFill,
 } from "react-icons/ri";
@@ -35,9 +34,9 @@ function App() {
       <header className={styles.header}>
         <span>💻 GR</span>
         <div>
-          <a href="#">Skils</a>
-          <a href="#">Projetos Principais</a>
-          <a href="#">Contato</a>
+          <a href="#skils">Skils</a>
+          <a href="#projects">Projetos Principais</a>
+          <a href="#contact">Contato</a>
           <a
             href="/docs/cv_Gabriel_Ribeiro.pdf"
             target="_blank"
@@ -78,7 +77,7 @@ function App() {
           </div>
         </section>
 
-        <Divider text="Skils" />
+        <Divider id="skils" text="Skils" />
 
         <Topic title="Usando agora">
           <section className={styles.evaluation}>
@@ -122,7 +121,7 @@ function App() {
           </section>
         </Topic>
 
-        <Divider text="Projetos Principais" />
+        <Divider id="projects" text="Projetos Principais" />
 
         <Topic>
           <section className={styles.projects}>
@@ -137,7 +136,7 @@ function App() {
           </section>
         </Topic>
       </main>
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="contact">
         <section className={styles.contentFooter}>
           <div className={styles.info}>
             <span>Desenvolvido com React</span>
