@@ -1,0 +1,144 @@
+{
+  "knowledges": [
+    {
+      "name": "React",
+      "photo": "/programming-languages/react.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "Next JS",
+      "photo": "/programming-languages/nextjs.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "HTML",
+      "photo": "/programming-languages/html.png",
+      "rating": 5,
+      "status": "Sênior"
+    },
+    {
+      "name": "CSS",
+      "photo": "/programming-languages/css.png",
+      "rating": 5,
+      "status": "Sênior"
+    },
+    {
+      "name": "JavaScript",
+      "photo": "/programming-languages/javascript.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "TypeScript",
+      "photo": "/programming-languages/typescript.png",
+      "rating": 3,
+      "status": "Pleno"
+    },
+    {
+      "name": "PHP",
+      "photo": "/programming-languages/php.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "jQuery",
+      "photo": "/programming-languages/jquery.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "Node",
+      "photo": "/programming-languages/node.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "Docker",
+      "photo": "/programming-languages/docker.png",
+      "rating": 2,
+      "status": "Júnior"
+    },
+    {
+      "name": "Git",
+      "photo": "/programming-languages/git.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "Jenkins",
+      "photo": "/programming-languages/jenkins.png",
+      "rating": 4,
+      "status": "Pleno"
+    },
+    {
+      "name": "MySQL",
+      "photo": "/programming-languages/mysql.png",
+      "rating": 2,
+      "status": "Júnior"
+    },
+    {
+      "name": "Oracle SQL",
+      "photo": "/programming-languages/oracle.png",
+      "rating": 2,
+      "status": "Júnior"
+    },
+    {
+      "name": "PostgreSQL",
+      "photo": "/programming-languages/postgresql.png",
+      "rating": 2,
+      "status": "Júnior"
+    }
+  ],
+  "learning": [
+    {
+      "name": "Python",
+      "photo": "/programming-languages/python.png",
+      "rating": 1
+    },
+    {
+      "name": "Java",
+      "photo": "/programming-languages/java.png",
+      "rating": 1
+    },
+    {
+      "name": "React Native",
+      "photo": "/programming-languages/react.png",
+      "rating": -1
+    }
+  ],
+  "languages": [
+    {
+      "name": "Português",
+      "photo": "/countries/br.png",
+      "rating": 5,
+      "status": "Fluente / Nativo"
+    },
+    {
+      "name": "Inglês",
+      "photo": "/countries/us.png",
+      "rating": 2,
+      "status": "Básico"
+    },
+    {
+      "name": "Francês",
+      "photo": "/countries/fr.png",
+      "rating": 2,
+      "status": "Básico"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Capital & Valor",
+      "especification": "Projeto desenvolvido com Laravel (PHP) e banco Postgre.",
+      "definition": "Serviço de análise do mercado de ações com informações detalhadas sobre o mercado e material didático para quem está iniciando.",
+      "link": "https://capitalevalor.com.br/"
+    },
+    {
+      "title": "Notificador",
+      "especification": "Desenvolvido utilizando Node no backend e banco de dados MySql. O frontend foi feito utilizando NextJs (React). Os dados a serem enviados são salvos em uma fila do RabbitMQ e são processados por workers  conforme as requisições são recebidas.",
+      "definition": "Sistema para envio de informativos de chamados críticos via SMS e/ou email."
+    }
+  ]
+}
