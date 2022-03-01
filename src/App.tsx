@@ -13,12 +13,14 @@ import {
   RiPhoneFill,
 } from "react-icons/ri";
 import { Project } from "./components/Project";
+import { Header } from "./components/Header";
 
 const age = getAge({ year: 1998, month: 3, day: 6 });
 
 document.title = "Portifólio Gabriel Ribeiro";
 
 function App() {
+
   const conhecimentos = db.knowledges.sort((a, b) => {
     if (a.rating > b.rating) {
       return -1;
@@ -31,21 +33,8 @@ function App() {
 
   return (
     <div>
-      <header className={styles.header}>
-        <span>💻 GR</span>
-        <div>
-          <a href="#skils">Skils</a>
-          <a href="#projects">Projetos Principais</a>
-          <a href="#contact">Contato</a>
-          <a
-            href="/docs/cv_Gabriel_Ribeiro.pdf"
-            target="_blank"
-            className={styles.bordered}
-          >
-            Currículo
-          </a>
-        </div>
-      </header>
+      <Header />
+
       <main className={styles.main}>
         <h1>Olá, Eu sou Gabriel Ribeiro.</h1>
         <section className={styles.about_me}>
@@ -127,6 +116,7 @@ function App() {
           <section className={styles.projects}>
             {db.projects.map((project) => (
               <Project
+                key={project.title}
                 title={project.title}
                 especification={project.especification}
                 definition={project.definition}
