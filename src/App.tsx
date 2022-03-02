@@ -51,8 +51,7 @@ function App() {
             </p>
             <p>
               Tenho familiaridade com bancos de dados Oracle, MySql e Postgres.
-              Desenvolvo também fluxos de automação utilizando Jenkins a maior
-              parte desses projetos desenvolvidos para minha empresa atual.
+              Desenvolvo também fluxos de automação utilizando Jenkins, a maior parte dos projetos foram desenvolvidos para empresa em que trabalho atualmente.
             </p>
             <p>
               Tenho grande adaptabilidade e não teria problemas caso seja
