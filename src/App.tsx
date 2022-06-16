@@ -20,7 +20,6 @@ const age = getAge({ year: 1998, month: 3, day: 6 });
 document.title = "Portifólio Gabriel Ribeiro";
 
 function App() {
-
   const conhecimentos = db.knowledges.sort((a, b) => {
     if (a.rating > b.rating) {
       return -1;
@@ -51,7 +50,9 @@ function App() {
             </p>
             <p>
               Tenho familiaridade com bancos de dados Oracle, MySql e Postgres.
-              Desenvolvo também fluxos de automação utilizando Jenkins, a maior parte dos projetos foram desenvolvidos para empresa em que trabalho atualmente.
+              Desenvolvo também fluxos de automação utilizando Jenkins, a maior
+              parte dos projetos foram desenvolvidos para empresa em que
+              trabalho atualmente.
             </p>
             <p>
               Tenho grande adaptabilidade e não teria problemas caso seja
@@ -69,43 +70,61 @@ function App() {
 
         <Topic title="Usando agora">
           <section className={styles.evaluation}>
-            {conhecimentos.map((knowledge) => (
-              <Knowledges
-                key={knowledge.name}
-                img={knowledge.photo}
-                name={knowledge.name}
-                rating={knowledge.rating}
-                status={knowledge.status}
-              />
-            ))}
+            {conhecimentos.map((knowledge) => {
+              if (knowledge.show) {
+                return (
+                  <Knowledges
+                    key={knowledge.name}
+                    img={knowledge.photo}
+                    name={knowledge.name}
+                    rating={knowledge.rating}
+                    status={knowledge.status}
+                  />
+                );
+              }
+
+              return null;
+            })}
           </section>
         </Topic>
 
         <Topic title="Estudando">
           <span>Tecnologias novas que estou aprendendo.</span>
           <section className={styles.evaluation}>
-            {db.learning.map((learning) => (
-              <Knowledges
-                key={learning.name}
-                img={learning.photo}
-                name={learning.name}
-                rating={learning.rating}
-              />
-            ))}
+            {db.learning.map((learning) => {
+              if (learning.show) {
+                return (
+                  <Knowledges
+                    key={learning.name}
+                    img={learning.photo}
+                    name={learning.name}
+                    rating={learning.rating}
+                  />
+                );
+              }
+
+              return null;
+            })}
           </section>
         </Topic>
 
         <Topic title="Idiomas">
           <section className={styles.evaluation}>
-            {db.languages.map((language) => (
-              <Knowledges
-                key={language.name}
-                img={language.photo}
-                status={language.status}
-                name={language.name}
-                rating={language.rating}
-              />
-            ))}
+            {db.languages.map((language) => {
+              if (language.show) {
+                return (
+                  <Knowledges
+                    key={language.name}
+                    img={language.photo}
+                    status={language.status}
+                    name={language.name}
+                    rating={language.rating}
+                  />
+                );
+              }
+
+              return null;
+            })}
           </section>
         </Topic>
 
@@ -113,15 +132,21 @@ function App() {
 
         <Topic>
           <section className={styles.projects}>
-            {db.projects.map((project) => (
-              <Project
-                key={project.title}
-                title={project.title}
-                especification={project.especification}
-                definition={project.definition}
-                link={!!project.link ? project.link : undefined}
-              />
-            ))}
+            {db.projects.map((project) => {
+              if (project.show) {
+                return (
+                  <Project
+                    key={project.title}
+                    title={project.title}
+                    especification={project.especification}
+                    definition={project.definition}
+                    link={!!project.link ? project.link : undefined}
+                  />
+                );
+              }
+
+              return null;
+            })}
           </section>
         </Topic>
       </main>
