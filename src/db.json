@@ -157,6 +157,13 @@
   ],
   "projects": [
     {
+      "title": "Distrito Network",
+      "definition": "Plataforma geral da empresa contando com diversas features.",
+      "especification": "Atuo no frontend, criando novas funcionalidades na versão v2 da plataforma, utilizando React com NextJs.",
+      "link": "https://v2.distrito.network/",
+      "show": true
+    },
+    {
       "title": "Capital & Valor",
       "especification": "Projeto desenvolvido com Laravel (PHP) e banco Postgre.",
       "definition": "Serviço de análise do mercado de ações com informações detalhadas sobre o mercado e material didático para quem está iniciando.",
