@@ -1,10 +1,7 @@
-import styles from "./App.module.scss";
-
-import db from "./db.json";
+import "./styles/global.scss";
 import { Knowledges } from "./components/Knowledges";
 import { Topic } from "./components/Topic";
 import { Divider } from "./components/Divider";
-import { getAge } from "./utils";
 
 import {
   RiGithubFill,
@@ -14,13 +11,15 @@ import {
 } from "react-icons/ri";
 import { Project } from "./components/Project";
 import { Header } from "./components/Header";
+import { LocationContext } from "./contexts/LocationContext";
+import { useContext } from "react";
 
-const age = getAge({ year: 1998, month: 3, day: 6 });
-
-document.title = "Portifólio Gabriel Ribeiro";
+document.title = "Portfolio Gabriel Ribeiro";
 
 function App() {
-  const conhecimentos = db.knowledges.sort((a, b) => {
+  const { db } = useContext(LocationContext);
+
+  const knowledge = db.knowledge.content.sort((a, b) => {
     if (a.rating > b.rating) {
       return -1;
     }
@@ -34,43 +33,30 @@ function App() {
     <div>
       <Header />
 
-      <main className={styles.main}>
-        <h1>Olá, Eu sou Gabriel Ribeiro.</h1>
-        <section className={styles.about_me}>
-          <div>
-            <p>
-              Tenho {age} anos, atualmente trabalho como Analista de Sistemas.
-              Sou apaixonado por desenvolvimento web e sempre busco me superar a
-              cada projeto.
-            </p>
-            <p>
-              Na maior parte dos meus projetos atuais, utilizo React para o
-              frontend e node para o backend, mas também já desenvolvi projetos
-              utilizando PHP.
-            </p>
-            <p>
-              Tenho familiaridade com bancos de dados Oracle, MySql e Postgres.
-              Desenvolvo também fluxos de automação utilizando Jenkins, a maior
-              parte dos projetos foram desenvolvidos para empresa em que
-              trabalho atualmente.
-            </p>
-            <p>
-              Tenho grande adaptabilidade e não teria problemas caso seja
-              necessário aprender uma nova tecnologia para me adequar a
-              projetos. Acredito que isso só me engrandece como profissinal e me
-              torna mais preparado para criar novas soluções.
-            </p>
+      <main className="max-w-6xl mx-auto my-0 mt-24 mb-8 py-0 px-6">
+        <h1 className="text-primary max-w-[1000px] font-bold text-5xl mb-10">
+          {db.main.title}
+        </h1>
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div className="text-white mx-auto my-0 text-lg">
+            {db.main.content.map((content) => (
+              <p key={content}>{content}</p>
+            ))}
           </div>
           <div>
-            <img src="https://github.com/ogrds.png" alt="Gabriel Ribeiro" />
+            <img
+              className="text-white mx-auto my-0 text-lg"
+              src="https://github.com/ogrds.png"
+              alt="Gabriel Ribeiro"
+            />
           </div>
         </section>
 
-        <Divider id="skils" text="Skils" />
+        <Divider id="skills" text={db.main.sections.skills} />
 
-        <Topic title="Usando agora">
-          <section className={styles.evaluation}>
-            {conhecimentos.map((knowledge) => {
+        <Topic title={db.knowledge.title}>
+          <section className="evaluation">
+            {knowledge.map((knowledge) => {
               if (knowledge.show) {
                 return (
                   <Knowledges
@@ -88,10 +74,9 @@ function App() {
           </section>
         </Topic>
 
-        <Topic title="Estudando">
-          <span>Tecnologias novas que estou aprendendo.</span>
-          <section className={styles.evaluation}>
-            {db.learning.map((learning) => {
+        <Topic title={db.learning.title} subtitle={db.learning.subtitle}>
+          <section className="evaluation">
+            {db.learning.content.map((learning) => {
               if (learning.show) {
                 return (
                   <Knowledges
@@ -108,9 +93,9 @@ function App() {
           </section>
         </Topic>
 
-        <Topic title="Idiomas">
-          <section className={styles.evaluation}>
-            {db.languages.map((language) => {
+        <Topic title={db.languages.title}>
+          <section className="evaluation">
+            {db.languages.content.map((language) => {
               if (language.show) {
                 return (
                   <Knowledges
@@ -128,17 +113,17 @@ function App() {
           </section>
         </Topic>
 
-        <Divider id="projects" text="Projetos Principais" />
+        <Divider id="projects" text={db.main.sections.projects} />
 
         <Topic>
-          <section className={styles.projects}>
+          <section className="text-white grid grid-cols-1 md:grid-cols-2 gap-8">
             {db.projects.map((project) => {
               if (project.show) {
                 return (
                   <Project
                     key={project.title}
                     title={project.title}
-                    especification={project.especification}
+                    specification={project.specification}
                     definition={project.definition}
                     link={!!project.link ? project.link : undefined}
                   />
@@ -150,41 +135,37 @@ function App() {
           </section>
         </Topic>
       </main>
-      <footer className={styles.footer} id="contact">
-        <section className={styles.contentFooter}>
-          <div className={styles.info}>
-            <span>Desenvolvido com React</span>
-            <span>
-              O design foi baseado no modelo{" "}
-              <a
-                href="https://www.figma.com/community/file/824810955262478067"
-                target="_blank
-              "
-              >
-                ryan.warner.codes
-              </a>{" "}
-              do figma
-            </span>
+      <footer className="bg-[#1c2c35] text-white" id="contact">
+        <section className="grid grid-cols-1 md:grid-cols-2 gap-8 item-center justify-between mx-auto my-0 max-w-6xl px-6 py-12">
+          <div className="flex items-center justify-center">
+            <span className="block">{db.footer.developed}</span>
           </div>
-          <div className={styles.social}>
-            <div>
-              <span className={styles.contact}>
+          <div className="flex items-center justify-center flex-col">
+            <div className="mb-8">
+              <span className="flex mb-2 gap-2 items-center justify-center">
                 <RiMailFill /> <span>gabrielrsilva98@gmail.com</span>
               </span>
-              <span className={styles.contact}>
+              <span className="flex mb-2 gap-2 items-center justify-center">
                 <RiPhoneFill /> <span>+55 (61) 98501-7742</span>
               </span>
             </div>
-            <a
-              href="https://www.linkedin.com/in/grds/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <RiLinkedinFill fontSize="1.2rem" />
-            </a>
-            <a href="https://github.com/ogrds" target="_blank" rel="noreferrer">
-              <RiGithubFill fontSize="1.2rem" />
-            </a>
+
+            <span className="flex mb-2 gap-2 items-center justify-center">
+              <a
+                href="https://www.linkedin.com/in/grds/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiLinkedinFill fontSize="1.2rem" />
+              </a>
+              <a
+                href="https://github.com/ogrds"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <RiGithubFill fontSize="1.2rem" />
+              </a>
+            </span>
           </div>
         </section>
       </footer>

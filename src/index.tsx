@@ -1,14 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './styles/global.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./styles/global.scss";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { LocationProvider } from "./contexts/LocationContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LocationProvider>
+      <App />
+    </LocationProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -1,0 +1,226 @@
+{
+  "header": {
+    "items": [
+      {
+        "title": "Skills",
+        "link": "#skills"
+      },
+      {
+        "title": "Projects",
+        "link": "#projects"
+      },
+      {
+        "title": "Contact",
+        "link": "#contact"
+      }
+    ],
+    "portfolio": {
+      "title": "Resume",
+      "link": "/docs/cv_Gabriel_Ribeiro.pdf"
+    }
+  },
+  "main": {
+    "title": "Hello, I'm Gabriel Ribeiro",
+    "content": [
+      "I am 24 years old and now I work as Front End Developer. I love web development and I always try to improve myself with each project.",
+      "In most of my current I use React to the frontend and NodeJS to the backend. Sometimes I use PHP.",
+      "I know about some databases, for example, Oracle, MySql and Postgres. Also, I know how to create automation flows using Jenkins.",
+      "I can adapt very well, so I don't have problems to learn a new technology for a new challenge. This is very important to my professional development."
+    ],
+    "sections": {
+      "skills": "Skills",
+      "projects": "Projects"
+    }
+  },
+  "knowledge": {
+    "title": "Knowledge",
+    "content": [
+      {
+        "name": "React",
+        "photo": "/programming-languages/react.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "Next JS",
+        "photo": "/programming-languages/nextjs.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "HTML",
+        "photo": "/programming-languages/html.png",
+        "rating": 5,
+        "status": "High Level",
+        "show": true
+      },
+      {
+        "name": "CSS",
+        "photo": "/programming-languages/css.png",
+        "rating": 5,
+        "status": "High Level",
+        "show": true
+      },
+      {
+        "name": "JavaScript",
+        "photo": "/programming-languages/javascript.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "TypeScript",
+        "photo": "/programming-languages/typescript.png",
+        "rating": 3,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "PHP",
+        "photo": "/programming-languages/php.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "jQuery",
+        "photo": "/programming-languages/jquery.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "Node",
+        "photo": "/programming-languages/node.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "Docker",
+        "photo": "/programming-languages/docker.png",
+        "rating": 2,
+        "status": "Low Level",
+        "show": true
+      },
+      {
+        "name": "Git",
+        "photo": "/programming-languages/git.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "Jenkins",
+        "photo": "/programming-languages/jenkins.png",
+        "rating": 4,
+        "status": "Average Level",
+        "show": true
+      },
+      {
+        "name": "MySQL",
+        "photo": "/programming-languages/mysql.png",
+        "rating": 2,
+        "status": "Low Level",
+        "show": true
+      },
+      {
+        "name": "Oracle SQL",
+        "photo": "/programming-languages/oracle.png",
+        "rating": 2,
+        "status": "Low Level",
+        "show": true
+      },
+      {
+        "name": "PostgreSQL",
+        "photo": "/programming-languages/postgresql.png",
+        "rating": 2,
+        "status": "Low Level",
+        "show": true
+      }
+    ]
+  },
+  "learning": {
+    "title": "Studying",
+    "subtitle": "Technologies I am learning",
+    "content": [
+      {
+        "name": "Python",
+        "photo": "/programming-languages/python.png",
+        "rating": 1,
+        "show": false
+      },
+      {
+        "name": "Angular",
+        "photo": "/programming-languages/angular.png",
+        "rating": -1,
+        "show": true
+      },
+      {
+        "name": "Java",
+        "photo": "/programming-languages/java.png",
+        "rating": 1,
+        "show": true
+      },
+      {
+        "name": "Spring",
+        "photo": "/programming-languages/spring.png",
+        "rating": -1,
+        "show": true
+      }
+    ]
+  },
+  "languages": {
+    "title": "Languages",
+    "content": [
+      {
+        "name": "Portuguese",
+        "photo": "/countries/br.png",
+        "rating": 5,
+        "status": "Fluent / Native",
+        "show": true
+      },
+      {
+        "name": "English",
+        "photo": "/countries/us.png",
+        "rating": 3,
+        "status": "Intermediate",
+        "show": true
+      },
+      {
+        "name": "French",
+        "photo": "/countries/fr.png",
+        "rating": 2,
+        "status": "Basic",
+        "show": true
+      }
+    ]
+  },
+  "projects": [
+    {
+      "title": "Distrito Network",
+      "definition": "General platform of the company",
+      "specification": "I work into the frontend part, creating new features for the version two, using React with NextJs.",
+      "link": "https://v2.distrito.network/",
+      "show": true
+    },
+    {
+      "title": "Capital & Valor",
+      "specification": "Project developed with Laravel (PHP) and Postgres database.",
+      "definition": "Stock market analysis service with detailed information about the market and educational material for beginners.",
+      "link": "https://capitalevalor.com.br/",
+      "show": true
+    },
+    {
+      "title": "Notificador",
+      "specification": "Developed using Node in the backend and MySql database. The frontend was made using NextJs (React). The data to be sent is saved in a RabbitMQ queue and is processed by workers as requests are received.",
+      "definition": "System for sending information by message or email.",
+      "show": true
+    }
+  ],
+  "footer": {
+    "developed": "Developed with React & TailwindCSS"
+  }
+}

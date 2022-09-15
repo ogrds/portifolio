@@ -1,7 +1,5 @@
 import { Rating } from "../Rating";
 
-import styles from "./Knowledges.module.scss";
-
 type KnowledgesProps = {
   img: string;
   name: string;
@@ -16,11 +14,15 @@ export const Knowledges: React.FC<KnowledgesProps> = ({
   status,
 }) => {
   return (
-    <div className={styles.container}>
-      <img src={img} width={50} alt={name} />
+    <div className="text-white px-6 py-2 text-2xl flex items-center border border-shadow_primary rounded-[6px]">
+      <img className="w-12 mr-5" src={img} width={50} alt={name} />
       <div>
         <span>{name}</span>
-        {status && <span className={styles.status}>{status}</span>}
+        {status && (
+          <span className="block text-base -mt-[5px] text-[#8080804a]">
+            {status}
+          </span>
+        )}
         {rating && <Rating quantity={rating} />}
       </div>
     </div>

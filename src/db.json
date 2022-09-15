@@ -1,4 +1,20 @@
 {
+  "header": {
+    "items": [
+      {
+        "title": "Habilidades",
+        "link": "#skills"
+      },
+      {
+        "title": "Projetos Principais",
+        "link": "#projects"
+      },
+      {
+        "title": "Contato",
+        "link": "#contact"
+      }
+    ]
+  },
   "knowledges": [
     {
       "name": "React",

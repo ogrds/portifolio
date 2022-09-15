@@ -1,28 +1,31 @@
 import { RiLinkM } from "react-icons/ri";
 
-import styles from "./Project.module.scss";
-
 type ProjectProps = {
   title: string;
-  especification: string;
+  specification: string;
   definition: string;
   link?: string | undefined;
 };
 
 export const Project: React.FC<ProjectProps> = ({
   title,
-  especification,
+  specification,
   definition,
   link,
 }) => {
   return (
-    <div className={styles.container}>
-      <h2>{title}</h2>
+    <div>
+      <h2 className="text-primary m-auto text-2xl font-bold mb-2">{title}</h2>
       <span>
-        <p>{definition}</p>
-        <p>{especification}</p>
+        <p className="mb-2">{definition}</p>
+        <p className="mb-2">{specification}</p>
         {!!link && (
-          <a href={link} target="_blank" rel="noreferrer">
+          <a
+            className="underline flex items-center gap-2"
+            href={link}
+            target="_blank"
+            rel="noreferrer"
+          >
             <RiLinkM /> Link
           </a>
         )}
