@@ -22,10 +22,10 @@
   "main": {
     "title": "Hello, I'm Gabriel Ribeiro",
     "content": [
-      "I am 24 years old and now I work as Front End Developer. I love web development and I always try to improve myself with each project.",
-      "In most of my current I use React to the frontend and NodeJS to the backend. Sometimes I use PHP.",
+      "I am 24 years old and now I work as a Front End Developer. I love web development and I always try to improve myself with each project.",
+      "In most of my current projects I use React to the frontend and NodeJS to the backend. Sometimes I use PHP.",
       "I know about some databases, for example, Oracle, MySql and Postgres. Also, I know how to create automation flows using Jenkins.",
-      "I can adapt very well, so I don't have problems to learn a new technology for a new challenge. This is very important to my professional development."
+      "I can adapt myself very well, so I don't have any problems to learn a new technology for a new challenge. This is very important to my professional development."
     ],
     "sections": {
       "skills": "Skills",
