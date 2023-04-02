@@ -16,13 +16,13 @@
     ],
     "portfolio": {
       "title": "Currículo",
-      "link": "/docs/cv_Gabriel_Ribeiro.pdf"
+      "link": "/docs/portuguese_resume.pdf"
     }
   },
   "main": {
     "title": "Olá, Eu sou Gabriel Ribeiro.",
     "content": [
-      "Tenho 24 anos, atualmente trabalho como Desenvolvedor Front End. Sou apaixonado por desenvolvimento web e sempre busco me superar a cada projeto.",
+      "Tenho 25 anos, atualmente trabalho como Desenvolvedor Front End. Sou apaixonado por desenvolvimento web e sempre busco me superar a cada projeto.",
       "Na maior parte dos projetos atuais, utilizo React para frontend e NodeJS para o backend, mas tenho experiência também com PHP.",
       "Tenho familiaridade com bancos de dados Oracle, MySql e Postgres. Desenvolvo também fluxos de automação utilizando Jenkins.",
       "Tenho grande adaptabilidade e não teria problemas caso seja necessário aprender uma nova tecnologia para me adequar a projetos. Acredito que isso só me engrandece como profissional e me torna mais preparado para criar novas soluções."
@@ -154,7 +154,7 @@
       },
       {
         "name": "Angular",
-        "photo": "/programming-languages/angular.png",
+        "photo": "/programming-languages/angular.svg",
         "rating": -1,
         "show": true
       },
@@ -162,11 +162,11 @@
         "name": "Java",
         "photo": "/programming-languages/java.png",
         "rating": 1,
-        "show": true
+        "show": false
       },
       {
-        "name": "Spring",
-        "photo": "/programming-languages/spring.png",
+        "name": "Kubernetes",
+        "photo": "/programming-languages/kubernetes.svg",
         "rating": -1,
         "show": true
       }
@@ -185,8 +185,8 @@
       {
         "name": "Inglês",
         "photo": "/countries/us.png",
-        "rating": 3,
-        "status": "Básico",
+        "rating": 4,
+        "status": "Avançado",
         "show": true
       },
       {
