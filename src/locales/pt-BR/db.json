@@ -218,6 +218,13 @@
       "specification": "Desenvolvido utilizando Node no backend e banco de dados MySql. O frontend foi feito utilizando NextJs (React). Os dados a serem enviados são salvos em uma fila do RabbitMQ e são processados por workers  conforme as requisições são recebidas.",
       "definition": "Sistema para envio de informativos de chamados críticos via SMS e/ou email.",
       "show": true
+    },
+    {
+      "title": "Weather widget",
+      "specification": "Desenvolvido com react, este é um simples widget para verificação da temperatura atual e de alguns dias a frente, onde é preciso apenas informar uma parte da localização e ainda tem a possibilidade de alternar a temperatura de ºC para ºF e o idioma de português para inglês.",
+      "definition": "Um widget onde você pode pode verificar a temperatura atual em qualquer lugar.",
+      "link": "https://widget-web-six.vercel.app/",
+      "show": true
     }
   ],
   "footer": {

@@ -218,6 +218,13 @@
       "specification": "Developed using Node in the backend and MySql database. The frontend was made using NextJs (React). The data to be sent is saved in a RabbitMQ queue and is processed by workers as requests are received.",
       "definition": "System for sending information by message or email.",
       "show": true
+    },
+    {
+      "title": "Weather widget",
+      "specification": "Developed with react, this is a simple widget for verification the current weather forecast and the 4 days preview. You can change toggle the temperature between ºC and ºF and the language between english and portuguese.",
+      "definition": "A widget to check all places weather forecast.",
+      "link": "https://widget-web-six.vercel.app/",
+      "show": true
     }
   ],
   "footer": {
