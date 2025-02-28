@@ -22,7 +22,7 @@
   "main": {
     "title": "Olá, Eu sou Gabriel Ribeiro.",
     "content": [
-      "Tenho 25 anos, atualmente trabalho como Desenvolvedor Front End. Sou apaixonado por desenvolvimento web e sempre busco me superar a cada projeto.",
+      "Tenho 27 anos, atualmente trabalho como Desenvolvedor Front End. Sou apaixonado por desenvolvimento web e sempre busco me superar a cada projeto.",
       "Na maior parte dos projetos atuais, utilizo React para frontend e NodeJS para o backend, mas tenho experiência também com PHP.",
       "Tenho familiaridade com bancos de dados Oracle, MySql e Postgres. Desenvolvo também fluxos de automação utilizando Jenkins.",
       "Tenho grande adaptabilidade e não teria problemas caso seja necessário aprender uma nova tecnologia para me adequar a projetos. Acredito que isso só me engrandece como profissional e me torna mais preparado para criar novas soluções."
@@ -38,106 +38,49 @@
       {
         "name": "React",
         "photo": "/programming-languages/react.png",
-        "rating": 4,
-        "status": "Pleno",
+        "rating": 5,
         "show": true
       },
       {
         "name": "Next JS",
         "photo": "/programming-languages/nextjs.png",
-        "rating": 4,
-        "status": "Pleno",
-        "show": true
-      },
-      {
-        "name": "HTML",
-        "photo": "/programming-languages/html.png",
         "rating": 5,
-        "status": "Sênior",
-        "show": true
-      },
-      {
-        "name": "CSS",
-        "photo": "/programming-languages/css.png",
-        "rating": 5,
-        "status": "Sênior",
         "show": true
       },
       {
         "name": "JavaScript",
         "photo": "/programming-languages/javascript.png",
-        "rating": 4,
-        "status": "Pleno",
+        "rating": 5,
         "show": true
       },
       {
         "name": "TypeScript",
         "photo": "/programming-languages/typescript.png",
-        "rating": 3,
-        "status": "Pleno",
+        "rating": 5,
         "show": true
       },
       {
-        "name": "PHP",
-        "photo": "/programming-languages/php.png",
+        "name": "TailwindCSS",
+        "photo": "/programming-languages/tailwindcss.png",
         "rating": 4,
-        "status": "Pleno",
-        "show": true
-      },
-      {
-        "name": "jQuery",
-        "photo": "/programming-languages/jquery.png",
-        "rating": 4,
-        "status": "Pleno",
         "show": true
       },
       {
         "name": "Node",
         "photo": "/programming-languages/node.png",
         "rating": 4,
-        "status": "Pleno",
         "show": true
       },
       {
         "name": "Docker",
         "photo": "/programming-languages/docker.png",
-        "rating": 2,
-        "status": "Júnior",
+        "rating": 3,
         "show": true
       },
       {
         "name": "Git",
         "photo": "/programming-languages/git.png",
         "rating": 4,
-        "status": "Pleno",
-        "show": true
-      },
-      {
-        "name": "Jenkins",
-        "photo": "/programming-languages/jenkins.png",
-        "rating": 4,
-        "status": "Pleno",
-        "show": true
-      },
-      {
-        "name": "MySQL",
-        "photo": "/programming-languages/mysql.png",
-        "rating": 2,
-        "status": "Júnior",
-        "show": true
-      },
-      {
-        "name": "Oracle SQL",
-        "photo": "/programming-languages/oracle.png",
-        "rating": 2,
-        "status": "Júnior",
-        "show": true
-      },
-      {
-        "name": "PostgreSQL",
-        "photo": "/programming-languages/postgresql.png",
-        "rating": 2,
-        "status": "Júnior",
         "show": true
       }
     ]
@@ -179,7 +122,7 @@
         "name": "Português",
         "photo": "/countries/br.png",
         "rating": 5,
-        "status": "Fluente / Nativo",
+        "status": "Nativo",
         "show": true
       },
       {
@@ -204,13 +147,6 @@
       "definition": "Plataforma geral da empresa contando com diversas features.",
       "specification": "Atuo no frontend, criando novas funcionalidades na versão v2 da plataforma, utilizando React com NextJs.",
       "link": "https://v2.distrito.network/",
-      "show": true
-    },
-    {
-      "title": "Capital & Valor",
-      "specification": "Projeto desenvolvido com Laravel (PHP) e banco Postgre.",
-      "definition": "Serviço de análise do mercado de ações com informações detalhadas sobre o mercado e material didático para quem está iniciando.",
-      "link": "https://capitalevalor.com.br/",
       "show": true
     },
     {
